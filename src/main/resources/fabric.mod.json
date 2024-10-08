@@ -1,0 +1,44 @@
+{
+	"schemaVersion": 1,
+	"id": "creakinghorror",
+	"version": "${version}",
+	"name": "CreakingHorror",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/creakinghorror/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.idothehax.CreakingHorror"
+		],
+		"client": [
+			"net.idothehax.CreakingHorrorClient"
+		],
+		"fabric-datagen": [
+			"net.idothehax.CreakingHorrorDataGenerator"
+		]
+	},
+	"mixins": [
+		"creakinghorror.mixins.json",
+		{
+			"config": "creakinghorror.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.16.5",
+		"minecraft": "~1.21.2-",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
