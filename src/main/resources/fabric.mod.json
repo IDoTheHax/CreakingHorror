@@ -2,10 +2,10 @@
 	"schemaVersion": 1,
 	"id": "creakinghorror",
 	"version": "${version}",
-	"name": "CreakingHorror",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"name": "Creaking Nighmare",
+	"description": "The Creaking is always watching",
 	"authors": [
-		"Me!"
+		"IDoTheHax"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
@@ -16,13 +16,13 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"net.idothehax.CreakingHorror"
+          "net.idothehax.creakinghorror.CreakingHorror"
 		],
 		"client": [
-			"net.idothehax.CreakingHorrorClient"
+			"net.idothehax.creakinghorror.CreakingHorrorClient"
 		],
 		"fabric-datagen": [
-			"net.idothehax.CreakingHorrorDataGenerator"
+          "net.idothehax.creakinghorror.CreakingHorrorDataGenerator"
 		]
 	},
 	"mixins": [

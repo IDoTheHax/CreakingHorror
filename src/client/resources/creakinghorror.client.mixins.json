@@ -1,6 +1,6 @@
 {
 	"required": true,
-	"package": "net.idothehax.mixin.client",
+	"package": "net.idothehax.creakinghorror.mixin.client",
 	"compatibilityLevel": "JAVA_21",
 	"client": [
 		"ExampleClientMixin"

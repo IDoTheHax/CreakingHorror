@@ -1,4 +1,4 @@
-//package net.idothehax.mixin;
+//package net.idothehax.creakinghorror.mixin;
 //
 //import net.minecraft.block.Block;
 //import net.minecraft.block.BlockState;

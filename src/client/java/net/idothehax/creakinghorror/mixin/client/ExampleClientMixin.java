@@ -1,4 +1,4 @@
-package net.idothehax.mixin.client;
+package net.idothehax.creakinghorror.mixin.client;
 
 import net.minecraft.client.MinecraftClient;
 import org.spongepowered.asm.mixin.Mixin;

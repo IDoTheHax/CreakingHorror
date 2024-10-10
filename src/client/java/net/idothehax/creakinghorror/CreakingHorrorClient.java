@@ -1,4 +1,4 @@
-package net.idothehax;
+package net.idothehax.creakinghorror;
 
 import net.fabricmc.api.ClientModInitializer;
 

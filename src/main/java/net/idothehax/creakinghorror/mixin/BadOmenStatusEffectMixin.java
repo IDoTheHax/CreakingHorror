@@ -1,7 +1,9 @@
-package net.idothehax.mixin;
+package net.idothehax.creakinghorror.mixin;
 
-import net.idothehax.CreakingHorror;
+import net.idothehax.creakinghorror.CreakingHorror;
+import net.idothehax.creakinghorror.entity.effect.ModStatusEffects;
 import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.registry.*;
@@ -45,10 +47,11 @@ public class BadOmenStatusEffectMixin {
                 }
 
                 biomeEntry.getKey().ifPresent(biomeKey -> {
+                    RegistryEntry<StatusEffect> creakingHauntEntry = Registries.STATUS_EFFECT.getEntry(ModStatusEffects.CREAKING_HAUNT);
+
                     if (biomeKey.equals(paleGardenKey)) {
-                        CreakingHorror.LOGGER.info("Player is in the pale_garden biome.");
-                    } else {
-                        CreakingHorror.LOGGER.info("Player is NOT in the pale_garden biome. Current biome: " + biomeKey);
+                        serverPlayerEntity.addStatusEffect(new StatusEffectInstance(creakingHauntEntry, 600, amplifier));
+
                     }
                 });
             }
