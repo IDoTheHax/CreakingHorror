@@ -3,7 +3,7 @@
 	"package": "net.idothehax.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
-		"ExampleMixin"
+      "BadOmenStatusEffectMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
